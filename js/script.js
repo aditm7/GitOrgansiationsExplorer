@@ -15,7 +15,7 @@ function func() {
                 let li = document.createElement('li');
                 let name = document.createElement('a');
                 let desc = document.createElement('span');
-                name.innerHTML = arr[i].name;
+                name.innerHTML = arr[i].name + ": ";
                 name.href = arr[i].html_url;
                 desc.innerHTML = arr[i].description;
                 li.appendChild(name);

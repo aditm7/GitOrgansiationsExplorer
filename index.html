@@ -24,34 +24,38 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div> -->
-    <label>Choose a Organization:
+    <div style="margin-top:10px;margin-left: 30px;">
+        <label>Choose a Organization
       <input list="organization" id="orgs" name="organization" /></label>
-    <datalist id="organization">
+        <datalist id="organization">
         <option value="Microsoft">
         <option value="Google">
         <option value="Facebook">
       </datalist>
-    <br>
-    <div style="display: flex;">
-        <div style="width:300px">Choose number of Organizations</div>
-        <div class="number-input">
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-            <input class="quantity" min="1" id="num_orgs" name="quantity" value="5" type="number">
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+        <br>
+
+        <div style="display: flex;margin-top: 10px;">
+            <div style="width:auto;">Choose number of Organizations</div>
+            <div class="number-input" style="margin-left:20px">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                <input class="quantity" min="1" id="num_orgs" name="quantity" value="5" type="number">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
         </div>
-    </div>
-    <br>
-    <div style="display: flex;">
-        <div style="width:300px">Choose number of forks</div>
-        <div class="number-input">
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-            <input class="quantity" min="1" id="num_forks" name="quantity" value="5" type="number">
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+        <br>
+        <div style="display: flex;">
+            <div style="width:auto">Choose number of forks</div>
+            <div class="number-input" style="margin-left:20px">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                <input class="quantity" min="1" id="num_forks" name="quantity" value="5" type="number">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
         </div>
+        <br>
+        <button id="submit" onclick="func()">Submit</button>
     </div>
-    <br>
-    <button onclick="func()">Submit</button>
     <ul id="list_orgs"></ul>
+
 </body>
 
 </html>

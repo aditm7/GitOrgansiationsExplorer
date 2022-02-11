@@ -72,3 +72,9 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: bold;
     text-align: center;
 }
+
+#submit {
+    background-color: lightgreen;
+    border-radius: 20px;
+    border: 10px 10px;
+}
